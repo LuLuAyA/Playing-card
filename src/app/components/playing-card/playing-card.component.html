@@ -1,34 +1,32 @@
 <div id="card">
   <div id="inside">
     <header>
-      <div class="" left>
-        <div id="name">My Monster</div>
+      <div class="left">
+        <div id="name">{{ monster.name }}</div>
       </div>
       <div class="right">
-        <div id="right">
-          <div id="hp">60HP</div>
-          <img class="energy icon" src="assets/electrique.png" />
-        </div>
+        <div id="hp">{{ monster.hp }}</div>
+        <img class="energy icon" src="./assets/img/icon.electrique.jpg" />
       </div>
     </header>
     <figure id="art">
-      <img src="assets/pikachu.png" />
-      <figcaption>N°025 Monster</figcaption>
+      <img src="./assets/img/pikachu.jpg" />
+      <figcaption>{{ monster.figureCaption }}</figcaption>
     </figure>
     <div id="capacities">
       <div class="capacity">
         <div class="main">
           <div class="cost">
-            <img class="icon energy" src="assets/electrique.png" />
-            <img class="icon energy" src="assets/electrique.png" />
+            <img class="icon energy" src="./assets/img/icon.electrique.jpg" />
+            <img class="icon energy" src="./assets/img/icon.electrique.jpg" />
           </div>
-          <div class="name">Vive attaque</div>
-          <div class="damage">+10</div>
+          <div class="name">{{ monster.attackName }}</div>
+          <div class="damage">{{ monster.attackStrength }}</div>
         </div>
-      </div>
-      <div class="description">
-        Lancer un pièce si c'est face, cette attaque fait 10 dégats
-        supplémentaire
+        <div class="description">
+          Lancer un pièce si c'est face, cette attaque fait 10 dégats
+          supplémentaire
+        </div>
       </div>
     </div>
   </div>
