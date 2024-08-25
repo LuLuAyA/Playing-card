@@ -1,4 +1,8 @@
-<div id="card-List">
-  <app-playing-card />
-  <app-playing-card [my-monster]="monster1" />
-</div>
+<app-search-bar
+  (submit)="increaseCount()"
+  [search]="search"
+  (searchChange)="search = $event"
+/>
+Search: {{ search }} <br />
+Click count:
+{{ count }}
