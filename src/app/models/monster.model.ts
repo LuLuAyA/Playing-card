@@ -1,5 +1,9 @@
+import { MonsterType } from '../utils/monster.utils';
+
 export class Monster {
-  name: string = 'My Monster';
+  name: string = 'Monster';
+  type: MonsterType = MonsterType.ELECTRIC;
+  image: string = 'assets/img/pikachu.png';
   hp: number = 40;
   figureCaption: string = 'N°001 Monster';
   attackName: string = 'Vive attaque';
