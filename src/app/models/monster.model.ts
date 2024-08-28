@@ -1,6 +1,7 @@
 import { MonsterType } from '../utils/monster.utils';
 
 export class Monster {
+  id: number = -1;
   name: string = 'Monster';
   type: MonsterType = MonsterType.ELECTRIC;
   image: string = 'assets/img/pikachu.png';
@@ -10,4 +11,8 @@ export class Monster {
   attackStrength: number = +10;
   attackDescription: string =
     "Lancer un pièce si c'est face, cette attaque fait 10 dégats de plus";
+
+  copy(): Monster {
+    return Object.assign(new Monster(), this);
+  }
 }
