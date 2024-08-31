@@ -3,14 +3,14 @@ import { MonsterType } from '../utils/monster.utils';
 export class Monster {
   id: number = -1;
   name: string = 'Monster';
+  image: string = 'assets/img/pik.png';
   type: MonsterType = MonsterType.ELECTRIC;
-  image: string = 'assets/img/pikachu.png';
-  hp: number = 40;
+  hp: number = 60;
   figureCaption: string = 'N°001 Monster';
-  attackName: string = 'Vive attaque';
-  attackStrength: number = +10;
-  attackDescription: string =
-    "Lancer un pièce si c'est face, cette attaque fait 10 dégats de plus";
+
+  attackName: string = 'Standard Attack';
+  attackStrength: number = 10;
+  attackDescription: string = 'This is an attack description...';
 
   copy(): Monster {
     return Object.assign(new Monster(), this);
