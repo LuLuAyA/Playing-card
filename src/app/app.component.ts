@@ -9,9 +9,9 @@ import {
 } from '@angular/core';
 import { PlayingCardComponent } from './components/playing-card/playing-card.component';
 import { Monster } from './models/monster.model';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { MonsterType } from './utils/monster.utils';
 import { MonsterService } from './services/monster/monster.service';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @Component({
   selector: 'app-root',
